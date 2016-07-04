@@ -12552,11 +12552,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="+5V">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -12571,19 +12566,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="+5V" prefix="P+">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -12807,48 +12789,48 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="C11" library="rcl" deviceset="CPOL-US" device="B45181A" value="47u"/>
 <part name="AGND1" library="supply1" deviceset="AGND" device=""/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
-<part name="C13" library="rcl" deviceset="C-US" device="025-024X044" value="100n"/>
+<part name="C13" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
 <part name="C14" library="rcl" deviceset="CPOL-US" device="B45181A" value="100u"/>
 <part name="C15" library="rcl" deviceset="C-US" device="025-024X044" value="100n"/>
 <part name="AGND2" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND3" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND4" library="supply1" deviceset="AGND" device=""/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="AGND5" library="supply1" deviceset="AGND" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="100k"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="15k"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="5k6"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/7" value="100k"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/7" value="15k"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/7" value="10k"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/7" value="10k"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="0207/7" value="5k6"/>
 <part name="C16" library="rcl" deviceset="CPOL-US" device="B45181A" value="4u7"/>
-<part name="C17" library="rcl" deviceset="C-US" device="050-025X075" value="3n9"/>
+<part name="C17" library="rcl" deviceset="C-US" device="050-024X044" value="3n9"/>
 <part name="AGND6" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND7" library="supply1" deviceset="AGND" device=""/>
-<part name="C18" library="rcl" deviceset="C-US" device="050-025X075" value="560p"/>
+<part name="C18" library="rcl" deviceset="C-US" device="050-024X044" value="560p"/>
 <part name="AGND8" library="supply1" deviceset="AGND" device=""/>
 <part name="C19" library="rcl" deviceset="CPOL-US" device="B45181A" value="4u7"/>
 <part name="C20" library="rcl" deviceset="C-US" device="050-025X075" value="82n"/>
 <part name="C21" library="rcl" deviceset="C-US" device="050-025X075" value="82n"/>
-<part name="C22" library="rcl" deviceset="C-US" device="025-024X044" value="10n"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="4k7"/>
+<part name="C22" library="rcl" deviceset="C-US" device="050-024X044" value="10n"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="0207/7" value="4k7"/>
 <part name="C23" library="rcl" deviceset="CPOL-US" device="B45181A" value="10u"/>
 <part name="OUT" library="erthenvar" deviceset="AUDIO-JACK" device=""/>
 <part name="AGND9" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND10" library="supply1" deviceset="AGND" device=""/>
 <part name="C24" library="rcl" deviceset="CPOL-US" device="B45181A" value="10u"/>
-<part name="POT" library="pot" deviceset="3RP/1610N" device="" value="50k"/>
+<part name="FEEDBACK" library="pot" deviceset="3RP/1610N" device="" value="50k"/>
 <part name="AGND11" library="supply1" deviceset="AGND" device=""/>
-<part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="18k"/>
-<part name="C25" library="rcl" deviceset="C-US" device="050-025X075" value="3n3"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="0207/7" value="18k"/>
+<part name="C25" library="rcl" deviceset="C-US" device="050-024X044" value="3n3"/>
 <part name="AGND12" library="supply1" deviceset="AGND" device=""/>
-<part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="15k"/>
-<part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
-<part name="C26" library="rcl" deviceset="C-US" device="050-025X075" value="560p"/>
-<part name="R10" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
-<part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
-<part name="TIME" library="pot" deviceset="3RP/1610N" device="" value="20k"/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="R8" library="rcl" deviceset="R-US_" device="0207/7" value="15k"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="0207/7" value="10k"/>
+<part name="C26" library="rcl" deviceset="C-US" device="050-024X044" value="560p"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="0207/7" value="10k"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
+<part name="TIME" library="pot" deviceset="3RP/1610N" device="" value="50k"/>
+<part name="AGND13" library="supply1" deviceset="AGND" device=""/>
+<part name="AGND14" library="supply1" deviceset="AGND" device=""/>
+<part name="AGND15" library="supply1" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12871,7 +12853,6 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="AGND2" gate="VR1" x="40.64" y="58.42"/>
 <instance part="AGND3" gate="VR1" x="30.48" y="58.42"/>
 <instance part="AGND4" gate="VR1" x="187.96" y="88.9"/>
-<instance part="GND2" gate="1" x="63.5" y="58.42"/>
 <instance part="AGND5" gate="VR1" x="96.52" y="25.4"/>
 <instance part="R1" gate="G$1" x="175.26" y="99.06" rot="R90"/>
 <instance part="R2" gate="G$1" x="152.4" y="106.68" rot="R180"/>
@@ -12894,7 +12875,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="AGND9" gate="VR1" x="198.12" y="55.88"/>
 <instance part="AGND10" gate="VR1" x="160.02" y="45.72"/>
 <instance part="C24" gate="G$1" x="167.64" y="63.5" rot="R90"/>
-<instance part="POT" gate="G$1" x="182.88" y="55.88" rot="MR180"/>
+<instance part="FEEDBACK" gate="G$1" x="182.88" y="55.88"/>
 <instance part="AGND11" gate="VR1" x="182.88" y="45.72"/>
 <instance part="R7" gate="G$1" x="180.34" y="81.28" rot="R180"/>
 <instance part="C25" gate="G$1" x="205.74" y="33.02"/>
@@ -12904,37 +12885,14 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="C26" gate="G$1" x="157.48" y="33.02"/>
 <instance part="R10" gate="G$1" x="149.86" y="20.32" rot="R180"/>
 <instance part="R11" gate="G$1" x="73.66" y="50.8" rot="R270"/>
-<instance part="TIME" gate="G$1" x="73.66" y="38.1" rot="MR0"/>
-<instance part="GND3" gate="1" x="73.66" y="25.4"/>
-<instance part="GND1" gate="1" x="17.78" y="93.98"/>
+<instance part="TIME" gate="G$1" x="73.66" y="35.56" rot="MR0"/>
+<instance part="AGND13" gate="VR1" x="25.4" y="93.98"/>
+<instance part="AGND14" gate="VR1" x="63.5" y="55.88"/>
+<instance part="AGND15" gate="VR1" x="73.66" y="25.4"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="63.5" y1="60.96" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="DGND"/>
-<wire x1="63.5" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="TIME" gate="G$1" pin="A"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="73.66" y1="27.94" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="TIME" gate="G$1" pin="S"/>
-<wire x1="73.66" y1="30.48" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="38.1" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
-<junction x="73.66" y="30.48"/>
-</segment>
-<segment>
-<pinref part="PWR1" gate="G$1" pin="GND"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="15.24" y1="109.22" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="109.22" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCC"/>
@@ -13042,14 +13000,33 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="160.02" y1="48.26" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="POT" gate="G$1" pin="E"/>
-<pinref part="AGND11" gate="VR1" pin="AGND"/>
-<wire x1="182.88" y1="48.26" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C25" gate="G$1" pin="2"/>
 <pinref part="AGND12" gate="VR1" pin="AGND"/>
 <wire x1="205.74" y1="25.4" x2="205.74" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="AGND11" gate="VR1" pin="AGND"/>
+<pinref part="FEEDBACK" gate="G$1" pin="A"/>
+<wire x1="182.88" y1="48.26" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="25.4" y1="96.52" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="PWR1" gate="G$1" pin="GND"/>
+<wire x1="15.24" y1="109.22" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="109.22" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="AGND13" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<wire x1="63.5" y1="58.42" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="DGND"/>
+<wire x1="63.5" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="AGND14" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="TIME" gate="G$1" pin="A"/>
+<wire x1="73.66" y1="27.94" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="AGND15" gate="VR1" pin="AGND"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -13186,11 +13163,11 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="POT" gate="G$1" pin="S"/>
-<wire x1="187.96" y1="55.88" x2="190.5" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="55.88" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="FEEDBACK" gate="G$1" pin="S"/>
+<wire x1="190.5" y1="55.88" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -13207,9 +13184,9 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <net name="N$22" class="0">
 <segment>
 <pinref part="C24" gate="G$1" pin="-"/>
-<pinref part="POT" gate="G$1" pin="A"/>
 <wire x1="172.72" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="63.5" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="FEEDBACK" gate="G$1" pin="E"/>
+<wire x1="182.88" y1="60.96" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -13261,7 +13238,12 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <segment>
 <pinref part="TIME" gate="G$1" pin="E"/>
 <pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="40.64" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="TIME" gate="G$1" pin="S"/>
 <wire x1="73.66" y1="43.18" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="35.56" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
+<junction x="73.66" y="43.18"/>
 </segment>
 </net>
 <net name="N$29" class="0">
